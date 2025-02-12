@@ -13,8 +13,7 @@ app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 const mustache = require('mustache-express');
 app.engine('mustache', mustache());
 app.set('view engine', 'mustache');
-
-
+   
 const router = require('./routes/studentSearchRoutes');
 app.use('/', router); 
 
